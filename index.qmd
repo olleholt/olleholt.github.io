@@ -1,5 +1,17 @@
 ---
-title: "olleholt.github.io"
+title: "Olivia Holt"
+image: IMG_5077.jpg
+about:
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/olivia-holt-0a15651b7/
+      icon: linkedin
+    - text: GitHub
+      href: https://github.com/olleholt/olleholt.github.io
+      icon: github
 ---
 
 ## Hi

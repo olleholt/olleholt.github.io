@@ -9,8 +9,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "olleholt.github.io",
+    "title": "Olivia Holt",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Bio here\nB.S. Environmental Engineering (2020), Colorado School of Mines\nM.S. Hydrologic Science & Engineering (2021), Colorado School of Mines"
+  },
+  {
+    "objectID": "index.html#hi",
+    "href": "index.html#hi",
+    "title": "Olivia Holt",
+    "section": "",
+    "text": "Bio here\nB.S. Environmental Engineering (2020), Colorado School of Mines\nM.S. Hydrologic Science & Engineering (2021), Colorado School of Mines"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Olivia Holt",
+    "section": "Experience",
+    "text": "Experience\nHydrologic Technician for the U.S. Geological Survey\nAssistant Water Resource Engineer for Confluence Engineering Solutions"
   }
 ]
