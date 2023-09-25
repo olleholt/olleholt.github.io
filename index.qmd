@@ -2,10 +2,16 @@
 title: "olleholt.github.io"
 ---
 
-This is a Quarto website.
+## Hi
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Bio here
 
-```{r}
-1 + 1
-```
+B.S. Environmental Engineering (2020), Colorado School of Mines
+
+M.S. Hydrologic Science & Engineering (2021), Colorado School of Mines
+
+## Experience
+
+Hydrologic Technician for the U.S. Geological Survey
+
+Assistant Water Resource Engineer for Confluence Engineering Solutions
