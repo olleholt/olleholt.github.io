@@ -1,7 +1,11 @@
 ---
 title: "Olivia Holt"
 description: "my first blog post"
-author:
+author: 
   - name: Olivia Holt
   url: https://olleholt.github.io/
+  affiliation: Master of Environmental Data Science Program
+  affiliation-url: https://ucsb-meds.github.io/
+date: 11-06-2023
 ---
+
