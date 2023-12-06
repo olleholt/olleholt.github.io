@@ -1,10 +1,31 @@
 [
   {
+    "objectID": "blogs.html",
+    "href": "blogs.html",
+    "title": "blog",
+    "section": "",
+    "text": "parquet and GeoParquet\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOlivia Holt\n\n\n\nQuarto\n\n\nR\n\n\nMEDS\n\n\n\nmy first blog post\n\n\n\nOlivia Holt\n\n\nNov 6, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/2023-11-06-myfirstpost/index.html",
+    "href": "blog/2023-11-06-myfirstpost/index.html",
+    "title": "Olivia Holt",
+    "section": "",
+    "text": "Hi this is the start of my first blog post\n\n\n\nCitationBibTeX citation:@online{holt2023,\n  author = {Holt, Olivia},\n  title = {Olivia {Holt}},\n  date = {2023-11-06},\n  url = {https://olleholt.github.io/blog/2023-11-06-myfirstpost},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nHolt, Olivia. 2023. “Olivia Holt.” November 6, 2023. https://olleholt.github.io/blog/2023-11-06-myfirstpost."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "blog/trial-python-render/contextily-and-parquet.html",
+    "href": "blog/trial-python-render/contextily-and-parquet.html",
+    "title": "parquet and GeoParquet",
+    "section": "",
+    "text": "** Apachece Parquet**\n\nimport geopandas\nimport matplotlib.pyplot as plt\n\nimport pystac_client\nimport planetary_computer\n\nimport contextily as ctx # for adding basemaps\n\nModuleNotFoundError: No module named 'contextily'\n\n\n\ncatalog = pystac_client.client.open(\n    \"\",\n    modifier = planetary_computer.sign_inplace,\n)"
   },
   {
     "objectID": "index.html",

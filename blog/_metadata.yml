@@ -1,0 +1,5 @@
+#enable banner style title blocks
+title-block-banner: true
+
+#only re render blog post if changes have been made
+freeze: auto
