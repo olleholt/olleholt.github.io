@@ -23,13 +23,18 @@ The adoption of AI, particularly in the form of machine learning applications, o
 
 One company currently working on environmental issues with the use of AI and machine learning is Climate Change AI (CCAI). Stated on their website as part of their guiding principles is, "Diversity, inclusion, and equity are central to the advancement of society in general, and moreover fundamental to progress in addressing climate change. Where possible, it is important that work in climate change and machine learning attempt to address the structural inequities that exist in today's society" (CCAI). It is crucial for companies to not only address ethical considerations in their statements but to also follow through in their work.
 
-### Prediction Uses
+### Uses
+
+#### Prediction
 
 -   The **US National Oceanic and Atmospheric Administration** leverages artificial intelligence to enhance the accuracy of forecasts for severe weather occurrences, including hurricanes, and to extract valuable insights from diverse datasets.
 
 -   Scientists at **NYU**, supported by a \$10 million grant from Schmidt Futures, are dedicated to refining climate-change predictions through the enhancement of climate simulations, employing artificial intelligence methodologies.
 
 -   The **Green Horizons** initiative by IBM, a research endeavor, leverages the capabilities of AI and the Internet of Things (IoT) for the analysis of climate change data. With machine learning, the system assimilates information from diverse sources, including meteorological satellites and traffic cameras, to refine its predictive models. It can predict pollution levels with a 72-hour lead time, offering precise insights on the origin and likely trajectory of pollution down to the nearest kilometer.
+
+#### Drones and Environmental Monitoring
+- According to technology entrepreneur Ewan Kirk, “Using UAVs to effectively monitor vegetation and land over large areas will help scientists and researchers to create large data sets helping them understand how climate change is affecting some of the world’s most critical resources”. Drones are one of the most efficient ways to collect data from remote regions, and gather information on ecological health.
 
 ### Thoughts
 
