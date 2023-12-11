@@ -2,7 +2,7 @@
 title: "Olivia Holt"
 image: IMG_3631.jpg
 about:
-  template: trestles
+  template: jolla
   image-shape: round
   image-width: 20em
   links:
