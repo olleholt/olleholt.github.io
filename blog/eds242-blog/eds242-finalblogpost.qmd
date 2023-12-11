@@ -10,8 +10,10 @@ date: 12-10-2023
 categories: [Quarto, R, MEDS]
 citation:
   url: https://olleholt.github.io/blog/2023-12-10-eds242-finalblog
-image: IMG_5077.jpg
+image: 960x0.webp
 ---
+
+## AI and Machine Learning in Climate Analysis
 
 The escalating threat of climate change has prompted the exploration of innovative solutions, and artificial intelligence (AI) has emerged as a potential ally against environmental problems.
 
@@ -36,4 +38,7 @@ The use of AI for climate action holds great potential, but it requires a consci
 References:
 
 Coeckelbergh, M. (2020). AI for climate: Freedom, justice, and other ethical and political challenges. AI and Ethics, 1(1), 67–72. https://doi.org/10.1007/s43681-020-00007-2 
+
 Climate Change AI. (n.d.). https://www.climatechange.ai/about 
+
+Minevich, M. (2023, October 5). AI champions Driving New Industry Solutions for Climate Change. Forbes. https://www.forbes.com/sites/markminevich/2021/03/31/ai-champions-driving-new-industry-solutions-for-climate-change/?sh=4ad1bc274f66 

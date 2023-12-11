@@ -1,6 +1,6 @@
 ---
 title: "Olivia Holt"
-image: IMG_5077.jpg
+image: IMG_3631.jpg
 about:
   template: trestles
   image-shape: round
@@ -14,9 +14,7 @@ about:
       icon: github
 ---
 
-## Hi
-
-Bio here
+## About
 
 B.S. Environmental Engineering (2020), Colorado School of Mines
 
