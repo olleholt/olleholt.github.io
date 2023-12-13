@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Olivia Holt">
-<meta name="dcterms.date" content="2023-11-06">
-<meta name="description" content="my first blog post">
+<meta name="dcterms.date" content="2023-12-12">
+<meta name="description" content="eds222">
 
 <title>olleholt.github.io - Olivia Holt</title>
 <style>
@@ -42,8 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <h1 class="title">Olivia Holt</h1>
                   <div>
         <div class="description">
-          my first blog post
+          eds222
         </div>
       </div>
                           <div class="quarto-categories">
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 6, 2023</p>
+        <p class="date">December 12, 2023</p>
       </div>
     </div>
     
@@ -162,7 +162,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a>
+  <ul class="collapse">
+  <li><a href="#simple-linear-regression-model" id="toc-simple-linear-regression-model" class="nav-link" data-scroll-target="#simple-linear-regression-model">Simple Linear Regression model</a></li>
+  <li><a href="#time-series-analysis" id="toc-time-series-analysis" class="nav-link" data-scroll-target="#time-series-analysis">Time Series Analysis</a></li>
+  </ul></li>
+  <li><a href="#takeaways" id="toc-takeaways" class="nav-link" data-scroll-target="#takeaways">Takeaways</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -170,19 +185,66 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Hi this is the start of my first blog post</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<ul>
+<li><p>Lake Tahoe water clarity has been measured since 1967.</p></li>
+<li><p>Clarity is measured as depth using a Secchi disk.</p></li>
+<li><p>California and Nevada, are actively working to restore lake clarity to its historic 97.4 feet.</p></li>
+<li><p>Factors known to influence year-to-year changes in clarity include the magnitude of runoff, the warming of the lake surface and the depth to which the lake mixes in the previous winter.</p></li>
+</ul>
+</section>
+<section id="analysis" class="level2">
+<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
+<section id="simple-linear-regression-model" class="level3">
+<h3 class="anchored" data-anchor-id="simple-linear-regression-model">Simple Linear Regression model</h3>
+<pre><code>Call: lm(formula = Secchi_Ave ~ avg_Chla, data = joined)
+Residuals:     Min      1Q  Median      3Q     Max
+-12.144  -2.554  -0.314   2.535  18.834
+Coefficients:             Estimate Std. Error t value             Pr(&gt;|t|)     (Intercept)  23.0601     0.4660  49.487 &lt; 0.0000000000000002 ***
+avg_Chla     -1.9169     0.6615  -2.898              0.00397 **
+--- Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1  Residual standard error: 4.258 on 385 degrees of freedom Multiple R-squared:  0.02135,  Adjusted R-squared:  0.01881  F-statistic: 8.398 on 1 and 385 DF,  p-value: 0.003971</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lm_plot.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="time-series-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="time-series-analysis">Time Series Analysis</h3>
+<p>seasonality</p>
+<p>overall decline in in secchi depth</p>
+<p><img src="secchi_timeseries.png" class="img-fluid"></p>
+<p><img src="chl_timeseries.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<ul>
+<li><p>Chlorophyll only shows a small influence on the variance of clarity</p></li>
+<li><p>look at things that interact with chl</p>
+<ul>
+<li>diatoms/zooplankton</li>
+</ul></li>
+</ul>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p>Toy, A. N. (2023, April 10). Clarity/Secchi. Tahoe Environmental Research Center. https://tahoe.ucdavis.edu/secchi#:~:text=Clarity%20sinks%20in&amp;text=In%202022%2C%20Lake%20Tahoe’s%20average,Secchi%20depth%20was%2080.6%20feet.</p>
+<p>Watanabe, Shohei; Schladow, Geoffrey (2022). Limnological data for Lake Tahoe seasonal and long-term clarity trend analysis report [Dataset]. Dryad. https://doi.org/10.25338/B83P8B</p>
 
 
+</section>
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{holt2023,
   author = {Holt, Olivia},
   title = {Olivia {Holt}},
-  date = {2023-11-06},
-  url = {https://olleholt.github.io/blog/2023-11-06-myfirstpost},
+  date = {2023-12-12},
+  url = {https://olleholt.github.io/blog/2023-12-12-eds222-final},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-holt2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Holt, Olivia. 2023. <span>“Olivia Holt.”</span> November 6, 2023. <a href="https://olleholt.github.io/blog/2023-11-06-myfirstpost">https://olleholt.github.io/blog/2023-11-06-myfirstpost</a>.
+Holt, Olivia. 2023. <span>“Olivia Holt.”</span> December 12, 2023. <a href="https://olleholt.github.io/blog/2023-12-12-eds222-final">https://olleholt.github.io/blog/2023-12-12-eds222-final</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
