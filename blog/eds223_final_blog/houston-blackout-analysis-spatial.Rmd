@@ -1,7 +1,7 @@
 ---
-title: 'EDS 223: assignment 3'
+title: 'Houston Blackout Spatial Analysis'
 author: "Olivia Holt"
-date: "2022-10-26"
+date: "2022-14-12"
 output:
     html_document:
       print_df: paged
@@ -20,32 +20,28 @@ knitr::opts_chunk$set(echo = TRUE)
 
 [^1]: Wikipedia. 2021. "2021 Texas power crisis." Last modified October 2, 2021. <https://en.wikipedia.org/wiki/2021_Texas_power_crisis>.
 
-For this assignment, you are tasked with:\
+Tasks for this analysis:\
 - estimating the number of homes in Houston that lost power as a result of the first two storms\
 - investigating if socioeconomic factors are predictors of communities recovery from a power outage
 
-Your analysis will be based on remotely-sensed night lights data, acquired from the [Visible Infrared Imaging Radiometer Suite (VIIRS)](https://en.wikipedia.org/wiki/Visible_Infrared_Imaging_Radiometer_Suite) onboard the Suomi satellite. In particular, you will use the VNP46A1 to detect differences in night lights before and after the storm to identify areas that lost electric power.
+##### Highlights of Analysis:
 
-To determine the number of homes that lost power, you link (spatially join) these areas with [OpenStreetMap](https://www.openstreetmap.org/#map=4/38.01/-95.84) data on buildings and roads.
-
-To investigate potential socioeconomic factors that influenced recovery, you will link your analysis with data from the US Census Bureau.
-
-##### Learning objectives:
-
--   load vector/raster data\
+-   loading vector/raster data\
 -   simple raster operations\
 -   simple vector operations\
 -   spatial joins
 
 ### Data
 
-#### Night lights
+#### Night lights data - Spatial
 
-Use NASA's Worldview to explore the data around the day of the storm. There are several days with too much cloud cover to be useful, but 2021-02-07 and 2021-02-16 provide two clear, contrasting images to visualize the extent of the power outage in Texas.
+Spatial data is remotely-sensed night lights data, acquired from the [Visible Infrared Imaging Radiometer Suite (VIIRS)](https://en.wikipedia.org/wiki/Visible_Infrared_Imaging_Radiometer_Suite) onboard the Suomi satellite. Specifically, VNP46A1 to detect differences in night lights before and after the storm to identify areas that lost electric power.
+
+The dates 2021-02-07 and 2021-02-16 provide two clear, contrasting images to visualize the extent of the power outage in Texas.
 
 VIIRS data is distributed through NASA's [Level-1 and Atmospheric Archive & Distribution System Distributed Active Archive Center (LAADS DAAC)](https://ladsweb.modaps.eosdis.nasa.gov/). Many NASA Earth data products are distributed in 10x10 degree tiles in sinusoidal equal-area projection. Tiles are identified by their horizontal and vertical position in the grid. Houston lies on the border of tiles h08v05 and h08v06. We therefore need to download two tiles per date.
 
-As you're learning in EDS 220, accessing, downloading, and preparing remote sensing data is a skill in it's own right! To prevent this assignment from being a large data wrangling challenge, we have downloaded and prepped the following files for you to work with, stored in the `VNP46A1` folder.\
+Files accessible in data folder\
 
 -   `VNP46A1.A2021038.h08v05.001.2021039064328.h5.tif`: tile h08v05, collected on 2021-02-07\
 -   `VNP46A1.A2021038.h08v06.001.2021039064329.h5.tif`: tile h08v06, collected on 2021-02-07\
@@ -66,6 +62,8 @@ We can also obtain building data from OpenStreetMap. We again downloaded from Ge
 
 -   `gis_osm_buildings_a_free_1.gpkg`
 
+To investigate potential socioeconomic factors that influenced recovery, you will link your analysis with data from the US Census Bureau.
+
 #### Socioeconomic
 
 We cannot readily get socioeconomic information for every home, so instead we obtained data from the [U.S. Census Bureau's American Community Survey](https://www.census.gov/programs-surveys/acs) for census tracts in 2019. The *folder* `ACS_2019_5YR_TRACT_48.gdb` is an ArcGIS ["file geodatabase"](https://desktop.arcgis.com/en/arcmap/latest/manage-data/administer-file-gdbs/file-geodatabases.htm), a multi-file proprietary format that's roughly analogous to a GeoPackage file.\
@@ -73,10 +71,6 @@ We cannot readily get socioeconomic information for every home, so instead we ob
 You can use `st_layers()` to explore the contents of the geodatabase. Each layer contains a subset of the fields documents in the [ACS metadata](https://www2.census.gov/geo/docs/maps-data/data/tiger/prejoined/ACSMetadata2011.txt).\
 
 The geodatabase contains a layer holding the geometry information, separate from the layers holding the ACS attributes. You have to combine the geometry with the attributes to get a feature layer that `sf` can use.
-
-## Assignment
-
-Below is an outline of the steps you should consider taking to achieve the assignment tasks.
 
 #### Find locations of blackouts
 
