@@ -39,13 +39,15 @@ To visualize these results they are plotted below with a linear regression line.
 
 Next I did a time series analysis to view the linear trendlines over time. From the plots below, we could imply chlorophyll is relatively stable over time and that clarity is decreasing. This data only has measurements until 2019 and from recent reports, clarity levels have actually been increasing since 2020.
 
-In 2022, the average annual clarity of Lake Tahoe was 71.7 feet, compared to 61 feet observed in 2021. A highlight of 2022 was the substantial improvement in lake clarity observed from August through December, with an average Secchi depth of 80.6 feet. This improvement coincided with the peak abundance of zooplankton, particularly Daphnia and Bosmina.
-
-From this analysis I would conclude that while chlorophyll levels could have some impact on clarity, there are probably other factors that contribute to more to clarity. In the future it would be beneficial to look at zooplankton counts as well, as they could have the affect on the amount of chlorophyll and other particles present in the water.
+In 2022, the average annual clarity of Lake Tahoe was 21.9 meters, compared to 18.6 feet observed in 2021. A highlight of 2022 was the substantial improvement in lake clarity observed from August through December, with an average Secchi depth of 24.6 feet. This improvement coincided with the peak abundance of zooplankton, particularly Daphnia and Bosmina.
 
 ![](secchi_timeseries.png)
 
 ![](chl_timeseries.png)
+
+### Takeaways
+
+From this analysis I would conclude that while chlorophyll levels could have some impact on clarity, there are probably other factors that contribute to more to clarity. In the future it would be beneficial to look at zooplankton counts as well, as they could have the affect on the amount of chlorophyll and other particles present in the water.
 
 ### References
 
