@@ -15,46 +15,37 @@ image: TahoeBlueIce_BrantAllenUCDavisTERC.jpg
 
 ## Background
 
--   Lake Tahoe water clarity has been measured since 1967.
+In Lake Tahoe, water clarity has been a focal point of scientific exploration since 1967. As an indicator of environmental health, clarity is measured using a Secchi disk, providing insights into the lake's overall transparency and depth. Year-to-year fluctuations in clarity are impacted by various factors, including runoff magnitude, lake surface warming, and winter mixing depth. Against California and Nevada's collaborative efforts to restore the lake's clarity to its historical depth of 97.4 feet, this analysis looks at the affects of chlorophyll-a on clarity. Using a Simple Linear Regression model, the investigation explores the relationship between Secchi depth and average chlorophyll-a concentration. Additionally, a Time Series Analysis proves as visual representation of seasonal patterns and an overall decline in Secchi depth. Through this exploration, the aim is to understand the relationship of environmental variables and their role in shaping the clarity of Lake Tahoe.
 
--   Clarity is measured as depth using a Secchi disk.
+## Data
 
--   California and Nevada, are actively working to restore lake clarity to its historic 97.4 feet.
-
--   Factors known to influence year-to-year changes in clarity include the magnitude of runoff, the warming of the lake surface and the depth to which the lake mixes in the previous winter.
+The data used in this project originates from the limnological data for Lake Tahoe, specifically compiled for a seasonal and long-term clarity trend analysis report. Authored by Shohei Watanabe and Geoffrey Schladow, the dataset provide information for understanding the limnological aspects of Lake Tahoe. The data encompasses variables related to the lake's ecological conditions, including Secchi depth, chlorophyll-a concentration, temperature, zookplankton counta, Nitrate, and other relevant parameters which are necessary for assessing water quality.
 
 ## Analysis
 
+The analysis plan for this project involves a Simple Linear Regression model, of Secchi depth against average chlorophyll-a concentration. This statistical analysis aims to quantify the relationship between these variables and the degree to which chlorophyll influences clarity variance.
+
 ### Simple Linear Regression model
 
-```         
-Call: lm(formula = Secchi_Ave ~ avg_Chla, data = joined)
-Residuals:     Min      1Q  Median      3Q     Max
--12.144  -2.554  -0.314   2.535  18.834
-Coefficients:             Estimate Std. Error t value             Pr(>|t|)     (Intercept)  23.0601     0.4660  49.487 < 0.0000000000000002 ***
-avg_Chla     -1.9169     0.6615  -2.898              0.00397 **
---- Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1  Residual standard error: 4.258 on 385 degrees of freedom Multiple R-squared:  0.02135,  Adjusted R-squared:  0.01881  F-statistic: 8.398 on 1 and 385 DF,  p-value: 0.003971
-```
+According to the output below, the estimated secchi depth when chlorophyll is zero is 23, although it is unlikely that chlorophyll concentrations will ever be zero. From the average chlorophyll intercept we can see that a one unit increase in chlorophyll concentration is associated with an estimated decrease of about 2 meters in clarity depth.
 
-![](lm_plot.png){fig-align="center"}
+![](images/lm_mod_eds222.png)
+
+To visualize these results they are plotted below with a linear regression line. The residuals have a minimum of -12.144, a maximum of 18.834 indicating some variability in the model's accuracy. The r-squared value is 0.02135 which suggests that this model explains only a small proportion of the variance in secchi depth (ie. variability in secchi depth is not well captured by the linear relationship with chlorophyll-a concentrations). This would imply that as the average chlorophyll concentrations increases, the depth of clarity decreases. This would make sense because chlorophyll is used to measure the presence of algae. Therefore, with less algae present, you\'d expect the water to be clearer.
+
+![](images/lm_reg_plot.png)
 
 ### Time Series Analysis
 
-seasonality
+Next I did a time series analysis to view the linear trendlines over time. From the plots below, we could imply chlorophyll is relatively stable over time and that clarity is decreasing. This data only has measurements until 2019 and from recent reports, clarity levels have actually been increasing since 2020.
 
-overall decline in in secchi depth
+In 2022, the average annual clarity of Lake Tahoe was 71.7 feet, compared to 61 feet observed in 2021. A highlight of 2022 was the substantial improvement in lake clarity observed from August through December, with an average Secchi depth of 80.6 feet. This improvement coincided with the peak abundance of zooplankton, particularly Daphnia and Bosmina.
+
+From this analysis I would conclude that while chlorophyll levels could have some impact on clarity, there are probably other factors that contribute to more to clarity. In the future it would be beneficial to look at zooplankton counts as well, as they could have the affect on the amount of chlorophyll and other particles present in the water.
 
 ![](secchi_timeseries.png)
 
 ![](chl_timeseries.png)
-
-## Takeaways
-
--   Chlorophyll only shows a small influence on the variance of clarity
-
--   look at things that interact with chl
-
-    -   diatoms/zooplankton
 
 ### References
 
