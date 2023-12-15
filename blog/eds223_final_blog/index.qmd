@@ -152,7 +152,7 @@ To find homes impacted by blackouts **st_read** and the following SQL query to s
 
 SELECT \*  FROM gis_osm_buildings_a_free_1WHERE (type IS NULL AND name IS NULL)OR type in ('residential', 'apartments', 'house', 'static_caravan', 'detached')
 
-#\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_this was taking way too long to long
+#\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ```{r}
 
