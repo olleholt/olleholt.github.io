@@ -55,7 +55,7 @@ We cannot readily get socioeconomic information for every home, so instead we ob
 
 **read in and combine the data**
 
-```{r include=TRUE}
+```{r warning = FALSE, message=FALSE}
 library(sf)
 library(stars)
 library(terra)
@@ -105,7 +105,7 @@ inten_vec <- st_as_sf(intensity_reclass) %>%
 
 With the defined region of Houston, the vectorized map from above was cropped to the area of interest.
 
-```{r}
+```{r warning = FALSE, message=FALSE}
 #make a data.frame x = c(coord), y = c(coords))
 bounds <- data.frame(x = c(-96.5, -96.5, -94.5, -94.5), y = c(29, 30.5, 30.5, 29))
 
@@ -121,7 +121,6 @@ houston_lights <- inten_vec[houston, ]
 
 #reprojecting using st_transform
 houston_lights_transform <- st_transform(houston_lights, crs = "EPSG:3083")
-houston_lights_transform
 
 ```
 
@@ -131,7 +130,7 @@ Areas within 200m of all highways using **st_buffer** were identified. Then the 
 
 query \<- "SELECT \* FROM gis_osm_roads_free_1 WHERE fclass='motorway'"highways \<- st_read("data/gis_osm_roads_free_1.gpkg", query = query)
 
-```{r}
+```{r warning = FALSE, message=FALSE, results='hide'}
 #loading query
 query1 <- "SELECT * FROM gis_osm_roads_free_1 WHERE fclass='motorway'"
 
@@ -154,7 +153,7 @@ SELECT \*  FROM gis_osm_buildings_a_free_1WHERE (type IS NULL AND name IS NULL)
 
 #\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-```{r}
+```{r warning = FALSE, message=FALSE, results='hide'}
 
 #this query selects for residential already
 query2 <- "SELECT * FROM gis_osm_buildings_a_free_1 WHERE (type IS NULL AND name IS NULL)OR type in ('residential', 'apartments', 'house', 'static_caravan', 'detached')"
@@ -166,7 +165,7 @@ buildings <- st_read("data/gis_osm_buildings_a_free_1.gpkg", query = query2) %>%
 
 filter to homes within blackout areas using **st_filter().**
 
-```{r}
+```{r warning = FALSE, message=FALSE}
 #using filter to find homes within blackout areas
 homes_blackout<- st_filter(buildings, hwys_further)
 
@@ -177,7 +176,7 @@ print(nrow(homes_blackout))
 
 Using **st_read()** to load the geodatabase layers.
 
-```{r}
+```{r warning = FALSE, message=FALSE}
 #using st_read() to load in gdb layers
 #reprojecting to EPSG:3080
 acs_geom <- st_read("data/ACS_2019_5YR_TRACT_48_TEXAS.gdb", layer = "ACS_2019_5YR_TRACT_48_TEXAS") %>% st_transform(3083) #transforming geometries
@@ -188,7 +187,7 @@ acs_income <- st_read("data/ACS_2019_5YR_TRACT_48_TEXAS.gdb", layer = "X19_INCOM
 
 The income data and the census tract geometries were joined using a **left_join()** and **st_join.** Then the number of impacted tracts were found using the **unique()** function.
 
-```{r}
+```{r warning = FALSE, message=FALSE}
 #renaming the column in income data to match the correct column in the geometries data
 income_new <- acs_income %>% rename("GEOID_Data" = "GEOID")
 
