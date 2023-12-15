@@ -63,6 +63,8 @@ library(spData)
 library(geodata)
 library(spDataLarge)
 library(tidyverse)
+library(tmap)
+library(patchwork)
 
 #reading in the data with read_stars for the night lights data
 night_1 <- read_stars("data/VNP46A1.A2021038.h08v05.001.2021039064328.tif", package = "stars")
