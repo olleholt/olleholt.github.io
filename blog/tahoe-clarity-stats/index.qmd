@@ -9,7 +9,7 @@ author:
 date: 12-12-2023
 categories: [Quarto, R, MEDS]
 citation:
-  url: https://olleholt.github.io/blog/2023-12-12-eds222-final
+  url: https://olleholt.github.io/blog/tahoe-clarity-stats
 image: TahoeBlueIce_BrantAllenUCDavisTERC.jpg
 ---
 
