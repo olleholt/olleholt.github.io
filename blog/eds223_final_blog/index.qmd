@@ -9,23 +9,28 @@ output:
       toc_depth: 4
       toc_float: yes
 ---
-Overview
 
-"In February 2021, the state of Texas suffered a major power crisis, which came about as a result of three severe winter storms sweeping across the United States on February 10–11, 13–17, and 15–20." For more background, check out these engineering and political perspectives.
+## Overview
 
-Tasks for this analysis:- estimating the number of homes in Houston that lost power as a result of the first two storms- investigating if socioeconomic factors are predictors of communities recovery from a power outage
+"In February 2021, the state of Texas suffered a major power crisis, which came about as a result of three severe winter storms sweeping across the United States on February 10--11, 13--17, and 15--20."
 
-Highlights of Analysis:
+Tasks for this analysis
 
-loading vector/raster data
+-   estimating the number of homes in Houston that lost power as a result of the first two storms
 
-simple raster operations
+-   investigating if socioeconomic factors are predictors of communities recovery from a power outage
 
-simple vector operations
+**Highlights of Analysis:**
 
-spatial joins
+-   loading vector/raster data
 
-Data
+-   simple raster operations
+
+-   simple vector operations
+
+-   spatial joins
+
+**Data**
 
 Night lights data - Spatial
 
@@ -81,7 +86,6 @@ combine tiles into a single stars object for each date (2021-02-07 and 2021-02-1
 
 hint: use st_mosaic
 
-
 ```{r include=TRUE}
 library(sf)
 library(stars)
@@ -115,7 +119,7 @@ reclassify the difference raster, assuming that any location that experienced a 
 
 assign NA to all locations that experienced a drop of less than 200 nW cm-2sr-1
 
-``` {r}
+```{r}
 #find the change in night lights intensity
 change_in_intensity <- stars_1 - stars_2
 
@@ -200,7 +204,7 @@ hint: st_buffer produces undissolved buffers, use st_union to dissolve them
 
 find areas that experienced blackouts that are further than 200m from a highway
 
-query <- "SELECT * FROM gis_osm_roads_free_1 WHERE fclass='motorway'"highways <- st_read("data/gis_osm_roads_free_1.gpkg", query = query)
+query \<- "SELECT \* FROM gis_osm_roads_free_1 WHERE fclass='motorway'"highways \<- st_read("data/gis_osm_roads_free_1.gpkg", query = query)
 
 ```{r}
 #loading query
@@ -233,7 +237,7 @@ load buildings dataset using st_read and the following SQL query to select only 
 
 hint: reproject data to EPSG:3083
 
-SELECT *  FROM gis_osm_buildings_a_free_1WHERE (type IS NULL AND name IS NULL)OR type in ('residential', 'apartments', 'house', 'static_caravan', 'detached')
+SELECT \*  FROM gis_osm_buildings_a_free_1WHERE (type IS NULL AND name IS NULL)OR type in ('residential', 'apartments', 'house', 'static_caravan', 'detached')
 
 ```{r}
 
@@ -372,4 +376,4 @@ impacted_plot+unimpacted_plot
 
 Discussion
 
-The histogram distributions look very similar on first glance. The y ranges are different but overall both plots are skewed to the right and unimodal. The map and the histograms do show that there is more of an impact from the storm for households with incomes less than $50,000 annually and a lower impact for blackouts for households. The limitations in the census tract data is that it is voluntary and therefore we do not know if it accurately represents the population as well as it could.
+The histogram distributions look very similar on first glance. The y ranges are different but overall both plots are skewed to the right and unimodal. The map and the histograms do show that there is more of an impact from the storm for households with incomes less than \$50,000 annually and a lower impact for blackouts for households. The limitations in the census tract data is that it is voluntary and therefore we do not know if it accurately represents the population as well as it could.
