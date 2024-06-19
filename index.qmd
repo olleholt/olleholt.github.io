@@ -16,9 +16,11 @@ about:
 
 ## About
 
-B.S. Environmental Engineering (2020), Colorado School of Mines
+Bachelor of Science Environmental Engineering (2020), Colorado School of Mines
 
-M.S. Hydrologic Science & Engineering (2021), Colorado School of Mines
+Master of Science Hydrologic Science & Engineering (2021), Colorado School of Mines
+
+Master of Environmental Data Science (2024), University of California, Santa Barbara
 
 ## Experience
 
