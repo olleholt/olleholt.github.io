@@ -14,7 +14,7 @@ about:
       icon: github
 ---
 
-## About
+## Education
 
 Bachelor of Science Environmental Engineering (2020), Colorado School of Mines
 
