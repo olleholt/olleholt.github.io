@@ -6,7 +6,7 @@ title: "About Me"
 
 I grew up with a love of the outdoors and would eagerly look forward to summers in the Poconos where I would catch salamanders, frogs, and snakes with my siblings. My siblings and I attended a summer camp in Dubois, WY for a few summers which contributed further to my love of the outdoors as I learned how to backpack, fly fish, horseback ride, rock climb etc. My experiences in nature drove me to pursue a STEM degree where I could continue to learn about environmental processes in order to make a difference.
 
-![Summer in Wyoming with my siblings](RenderedImage.jpeg)
+![Summer in Wyoming with my siblings](RenderedImage.jpeg){width=70%}
 
 **Educational Journey**
 
@@ -14,11 +14,11 @@ My goal has always been to combine my love for math and science with my passion 
 
 I have a strong desire to continue learning and exploring which was further cultivated from my Senior Design capstone experience at Mines. I was fortunate enough to work on a water delivery system project for two neighboring villages in Nepal. My team and I were able to fund enough resources to be able to make a trip out there as well which was crucial in determining the final project solution.
 
-![Hiking in Nepal](IMG_0848.jpeg)
-
+::: {layout="[[50,50]]"}
 ![Hiking in Nepal](IMG_0899.jpeg)
 
 ![Hiking in Nepal](Nepal2019_dog_KhundeKhumjungP1000258-2.jpg)
+:::
 
 **Hobbies and Interests**
 
