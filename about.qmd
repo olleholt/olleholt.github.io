@@ -23,3 +23,14 @@ I have a strong desire to continue learning and exploring which was further cult
 **Hobbies and Interests**
 
 I am passionate about science communication and analysis, and I am always looking for ways to share my love of science with others. In my free time, I enjoy running, climbing, and spending time with my dog, Homer (named after the poet).
+
+Here are some photos of my favorite adventures:
+::: {layout-nrow=2}
+![Kungsleden trail nordic skiing trip](IMG_9247.jpeg)
+
+![](IMG_0889.jpeg)
+
+![Sailing trip in the Ionian Sea](IMG_4780.jpeg)
+
+![Climbing trip in Red Rocks](IMG_2276.jpeg)
+:::
