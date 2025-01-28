@@ -14,6 +14,12 @@ My goal has always been to combine my love for math and science with my passion 
 
 I have a strong desire to continue learning and exploring which was further cultivated from my Senior Design capstone experience at Mines. I was fortunate enough to work on a water delivery system project for two neighboring villages in Nepal. My team and I were able to fund enough resources to be able to make a trip out there as well which was crucial in determining the final project solution.
 
+**My Focus**
+
+I specialize in leveraging data science tools and techniques to solve complex environmental challenges. My expertise lies at the intersection of:
+
+- **Hydrology and Environmental Engineering**: Utilizing scientific principles to manage and conserve water resources.
+- **Data Science**: Applying machine learning, spatial analysis, and statistical modeling to environmental datasets.
 
 ::: {layout="[[50,50]]"}
 ![Hiking in Nepal](IMG_0899.jpeg)
@@ -21,13 +27,13 @@ I have a strong desire to continue learning and exploring which was further cult
 ![Hiking in Nepal](Nepal2019_dog_KhundeKhumjungP1000258-2.jpg)
 :::
 
-**Hobbies and Interests**
+**Beyond Work**
 
-I am passionate about science communication and analysis, and I am always looking for ways to share my love of science with others. In my free time, I enjoy running, climbing, and spending time with my dog, Homer (named after the poet).
+When I’m not working with data, you can find me exploring the outdoors, enjoying a good book, or spending time with my dog, Homer (named after the poet). I’m always up for learning something new and connecting with others who share my passion for the environment.
 
-Here are some photos of my favorite adventures:
+Here are some photos from my favorite adventures:
 
-::: {layout-nrow=2}
+::: {layout-nrow=3}
 ![Kungsleden trail nordic skiing trip](IMG_9247.jpeg)
 
 ![](IMG_0889.jpeg)
@@ -35,4 +41,9 @@ Here are some photos of my favorite adventures:
 ![Sailing trip in the Ionian Sea](IMG_4780.jpeg)
 
 ![Climbing trip in Red Rocks](IMG_2276.jpeg)
+![Homer enjoying the beach](IMG_4906.jpeg)
+
+![](75430009.jpeg)
 :::
+
+
