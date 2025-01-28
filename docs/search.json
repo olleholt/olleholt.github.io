@@ -18,7 +18,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Background\nI grew up with a love of the outdoors and would eagerly look forward to summers in the Poconos where I would catch salamanders, frogs, and snakes with my siblings. My siblings and I attended a summer camp in Dubois, WY for a few summers which contributed further to my love of the outdoors as I learned how to backpack, fly fish, horseback ride, rock climb etc. My experiences in nature drove me to pursue a STEM degree where I could continue to learn about environmental processes in order to make a difference.\n\n\n\nSummer in Wyoming with my siblings\n\n\nEducational Journey\nMy goal has always been to combine my love for math and science with my passion for understanding how people interact with their environments in different regions. My early experiences in the outdoors drove me to pursue a STEM degree where I could continue to learn about environmental processes in order to make a difference.Throughout my career, I’ve had roles as a Hydrologic Technician and an Assistant Water Resource Engineer, which have provided me with a foundation in fieldwork, data analysis, and environmental modeling.\nI have a strong desire to continue learning and exploring which was further cultivated from my Senior Design capstone experience at Mines. I was fortunate enough to work on a water delivery system project for two neighboring villages in Nepal. My team and I were able to fund enough resources to be able to make a trip out there as well which was crucial in determining the final project solution.\nMy Focus\nI specialize in leveraging data science tools and techniques to solve complex environmental challenges. My expertise lies at the intersection of:\n\nHydrology and Environmental Engineering: Utilizing scientific principles to manage and conserve water resources.\nData Science: Applying machine learning, spatial analysis, and statistical modeling to environmental datasets.\n\n\n\n\n\n\n\n\n\n\nHiking in Nepal\n\n\n\n\n\n\n\nHiking in Nepal\n\n\n\n\n\nBeyond Work\nWhen I’m not working with data, you can find me exploring the outdoors, enjoying a good book, or spending time with my dog, Homer (named after the poet). I’m always up for learning something new and connecting with others who share my passion for the environment.\nHere are some photos from my favorite adventures:\n\n\n\n\n\n\n\n\n\nKungsleden trail nordic skiing trip\n\n\n\n\n\n\n\n\n\n\n\n\nSailing trip in the Ionian Sea"
+    "text": "I grew up with a love for the outdoors, spending summers in the Poconos catching salamanders, frogs, and snakes with my siblings. These early adventures fueled my fascination with nature and shaped my career path. A summer camp in Dubois, WY further deepened this love, teaching me how to backpack, fly fish, horseback ride, and rock climb.\nThese experiences inspired me to pursue a STEM degree where I could combine my curiosity for the environment with my desire to make a meaningful impact.\n\n\n\nSummer in Wyoming with my siblings\n\n\n\n\n\n\nMy academic and professional journey has always focused on combining my love for math and science with my passion for understanding how people interact with their environments. Through my studies, I’ve had the opportunity to explore:\n\nEnvironmental processes and data analysis.\nHands-on problem-solving through fieldwork.\nDesigning impactful, sustainable systems.\n\nOne of the most transformative experiences was my Senior Design capstone project at Colorado School of Mines, where my team designed a water delivery system for two villages in Nepal. Traveling to Nepal to finalize the solution gave me firsthand insight into the local culture, geography, and needs.\n\n\n\n\n\n\n \n\n\n\nThese experiences laid the foundation for my current focus on data science and environmental modeling, blending fieldwork with cutting-edge technology to solve environmental challenges.\n\n\n\n\nI specialize in combining data science with hydrology and environmental engineering to address real-world environmental issues. My skill set includes:\n\nData Science: Applying machine learning, statistical modeling, and spatial analysis to environmental datasets.\nHydrology and Environmental Engineering: Managing water resources and creating sustainable solutions.\n\nI’m passionate about creating workflows and tools that make environmental data more accessible, actionable, and impactful.\n\n\n\n\nWhen I’m not immersed in data, I’m usually exploring the outdoors, reading a good book, or spending time with my dog, Homer (named after the poet). I also enjoy connecting with others who share a passion for sustainability and environmental science.\nHere are some snapshots from my favorite adventures:"
   },
   {
     "objectID": "blog/trial-python-render/contextily-and-parquet.html",
@@ -201,5 +201,33 @@
     "title": "Olivia Holt",
     "section": "",
     "text": "Bachelor of Science Environmental Engineering (2020), Colorado School of Mines\nMaster of Science Hydrologic Science & Engineering (2021), Colorado School of Mines\nMaster of Environmental Data Science (2024), University of California, Santa Barbara"
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "I grew up with a love for the outdoors, spending summers in the Poconos catching salamanders, frogs, and snakes with my siblings. These early adventures fueled my fascination with nature and shaped my career path. A summer camp in Dubois, WY further deepened this love, teaching me how to backpack, fly fish, horseback ride, and rock climb.\nThese experiences inspired me to pursue a STEM degree where I could combine my curiosity for the environment with my desire to make a meaningful impact.\n\n\n\nSummer in Wyoming with my siblings"
+  },
+  {
+    "objectID": "about.html#educational-journey",
+    "href": "about.html#educational-journey",
+    "title": "About Me",
+    "section": "",
+    "text": "My academic and professional journey has always focused on combining my love for math and science with my passion for understanding how people interact with their environments. Through my studies, I’ve had the opportunity to explore:\n\nEnvironmental processes and data analysis.\nHands-on problem-solving through fieldwork.\nDesigning impactful, sustainable systems.\n\nOne of the most transformative experiences was my Senior Design capstone project at Colorado School of Mines, where my team designed a water delivery system for two villages in Nepal. Traveling to Nepal to finalize the solution gave me firsthand insight into the local culture, geography, and needs.\n\n\n\n\n\n\n \n\n\n\nThese experiences laid the foundation for my current focus on data science and environmental modeling, blending fieldwork with cutting-edge technology to solve environmental challenges."
+  },
+  {
+    "objectID": "about.html#my-focus",
+    "href": "about.html#my-focus",
+    "title": "About Me",
+    "section": "",
+    "text": "I specialize in combining data science with hydrology and environmental engineering to address real-world environmental issues. My skill set includes:\n\nData Science: Applying machine learning, statistical modeling, and spatial analysis to environmental datasets.\nHydrology and Environmental Engineering: Managing water resources and creating sustainable solutions.\n\nI’m passionate about creating workflows and tools that make environmental data more accessible, actionable, and impactful."
+  },
+  {
+    "objectID": "about.html#beyond-work",
+    "href": "about.html#beyond-work",
+    "title": "About Me",
+    "section": "",
+    "text": "When I’m not immersed in data, I’m usually exploring the outdoors, reading a good book, or spending time with my dog, Homer (named after the poet). I also enjoy connecting with others who share a passion for sustainability and environmental science.\nHere are some snapshots from my favorite adventures:"
   }
 ]

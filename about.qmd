@@ -1,49 +1,74 @@
 ---
 title: "About Me"
+format: 
+  html:
+    toc: false
+    theme: lumen
+    css: styles.css  # Add custom styles if needed
 ---
 
-**Background**
+# About Me
 
-I grew up with a love of the outdoors and would eagerly look forward to summers in the Poconos where I would catch salamanders, frogs, and snakes with my siblings. My siblings and I attended a summer camp in Dubois, WY for a few summers which contributed further to my love of the outdoors as I learned how to backpack, fly fish, horseback ride, rock climb etc. My experiences in nature drove me to pursue a STEM degree where I could continue to learn about environmental processes in order to make a difference.
+---
 
-![Summer in Wyoming with my siblings](RenderedImage.jpeg){width=70%}
+## 🌿 **Background**
 
-**Educational Journey**
+I grew up with a love for the outdoors, spending summers in the **Poconos** catching salamanders, frogs, and snakes with my siblings. These early adventures fueled my fascination with nature and shaped my career path. A summer camp in **Dubois, WY** further deepened this love, teaching me how to **backpack, fly fish, horseback ride, and rock climb**. 
 
-My goal has always been to combine my love for math and science with my passion for understanding how people interact with their environments in different regions. My early experiences in the outdoors drove me to pursue a STEM degree where I could continue to learn about environmental processes in order to make a difference.Throughout my career, I’ve had roles as a Hydrologic Technician and an Assistant Water Resource Engineer, which have provided me with a foundation in fieldwork, data analysis, and environmental modeling.
+These experiences inspired me to pursue a STEM degree where I could combine my curiosity for the environment with my desire to make a meaningful impact. 
 
-I have a strong desire to continue learning and exploring which was further cultivated from my Senior Design capstone experience at Mines. I was fortunate enough to work on a water delivery system project for two neighboring villages in Nepal. My team and I were able to fund enough resources to be able to make a trip out there as well which was crucial in determining the final project solution.
+![Summer in Wyoming with my siblings](RenderedImage.jpeg){width=60% .center}
 
-**My Focus**
+---
 
-I specialize in leveraging data science tools and techniques to solve complex environmental challenges. My expertise lies at the intersection of:
+## 🎓 **Educational Journey**
 
-- **Hydrology and Environmental Engineering**: Utilizing scientific principles to manage and conserve water resources.
-- **Data Science**: Applying machine learning, spatial analysis, and statistical modeling to environmental datasets.
+My academic and professional journey has always focused on combining my love for **math** and **science** with my passion for understanding how people interact with their environments. Through my studies, I've had the opportunity to explore:
+
+- Environmental processes and data analysis.
+- Hands-on problem-solving through fieldwork.
+- Designing impactful, sustainable systems.
+
+One of the most transformative experiences was my **Senior Design capstone project** at **Colorado School of Mines**, where my team designed a water delivery system for two villages in **Nepal**. Traveling to Nepal to finalize the solution gave me firsthand insight into the local culture, geography, and needs.
 
 ::: {layout="[[50,50]]"}
 ![Hiking in Nepal](IMG_0899.jpeg)
-
-![Hiking in Nepal](Nepal2019_dog_KhundeKhumjungP1000258-2.jpg)
+![Village dog in Khunde, Nepal](Nepal2019_dog_KhundeKhumjungP1000258-2.jpg)
 :::
 
-**Beyond Work**
+These experiences laid the foundation for my current focus on **data science and environmental modeling**, blending fieldwork with cutting-edge technology to solve environmental challenges.
 
-When I’m not working with data, you can find me exploring the outdoors, enjoying a good book, or spending time with my dog, Homer (named after the poet). I’m always up for learning something new and connecting with others who share my passion for the environment.
+---
 
-Here are some photos from my favorite adventures:
+## 🔬 **My Focus**
 
-::: {layout-nrow=3}
+I specialize in combining **data science** with **hydrology and environmental engineering** to address real-world environmental issues. My skill set includes:
+
+- **Data Science**: Applying machine learning, statistical modeling, and spatial analysis to environmental datasets.
+- **Hydrology and Environmental Engineering**: Managing water resources and creating sustainable solutions.
+
+I’m passionate about creating workflows and tools that make environmental data more accessible, actionable, and impactful.
+
+---
+
+## 🌟 **Beyond Work**
+
+When I’m not immersed in data, I’m usually **exploring the outdoors**, reading a good book, or spending time with my dog, **Homer** (named after the poet). I also enjoy connecting with others who share a passion for sustainability and environmental science.
+
+Here are some snapshots from my favorite adventures:
+
+::: {layout-nrow=2}
 ![Kungsleden trail nordic skiing trip](IMG_9247.jpeg)
-
-![](IMG_0889.jpeg)
+![Exploring nature](IMG_0889.jpeg)
 
 ![Sailing trip in the Ionian Sea](IMG_4780.jpeg)
-
 ![Climbing trip in Red Rocks](IMG_2276.jpeg)
-![Homer enjoying the beach](IMG_4906.jpeg)
 
-![](75430009.jpeg)
+![Homer enjoying the beach](IMG_4906.jpeg)
+![A serene moment outdoors](75430009.jpg)
 :::
+
+---
+
 
 
