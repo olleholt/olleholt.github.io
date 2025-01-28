@@ -5,10 +5,8 @@ format:
     toc: false
     theme: lumen
     css: styles.css  # Add custom styles if needed
+
 ---
-
-# About Me
-
 ---
 
 ## 🌿 **Background**

@@ -1,1 +1,24 @@
-/* css styles */
+/* Center images */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add shadow and rounded corners to images */
+img {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style headers */
+h1, h2 {
+  font-family: "Arial", sans-serif;
+  color: #2c3e50; /* A nice dark blue */
+}
+
+/* Improve spacing between sections */
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
