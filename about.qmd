@@ -55,7 +55,7 @@ When I’m not immersed in data, I’m usually **exploring the outdoors**, readi
 
 Here are some snapshots from my favorite adventures:
 
-::: {layout-nrow=4}
+::: {layout-nrow=1}
 ![Kungsleden trail nordic skiing trip](IMG_9247.jpeg)
 ![Exploring nature](IMG_0889.jpeg)
 
