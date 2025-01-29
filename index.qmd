@@ -14,6 +14,20 @@ about:
       icon: github
 ---
 
+## **Welcome!** 👋
+
+I’m \[Your Name\], an **Environmental Data Scientist** with a background in **hydrology, environmental engineering, and data science**. I’m passionate about using data-driven solutions to tackle complex environmental challenges, from water resource management to climate modeling.
+
+On this site, you’ll find:
+
+-   My **projects**, showcasing data science applications in environmental research
+
+-   My **background**, including my journey in environmental science & engineering
+
+-   Ways to **connect**, whether for collaboration or just to chat about sustainability!
+
+Feel free to explore and reach out if you’d like to connect! 🚀
+
 ## Education
 
 Bachelor of Science Environmental Engineering (2020), Colorado School of Mines

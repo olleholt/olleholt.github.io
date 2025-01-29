@@ -32,7 +32,7 @@
     "href": "index.html",
     "title": "Olivia Holt",
     "section": "",
-    "text": "Bachelor of Science Environmental Engineering (2020), Colorado School of Mines\nMaster of Science Hydrologic Science & Engineering (2021), Colorado School of Mines\nMaster of Environmental Data Science (2024), University of California, Santa Barbara"
+    "text": "I’m [Your Name], an Environmental Data Scientist with a background in hydrology, environmental engineering, and data science. I’m passionate about using data-driven solutions to tackle complex environmental challenges, from water resource management to climate modeling.\nOn this site, you’ll find:\n\nMy projects, showcasing data science applications in environmental research\nMy background, including my journey in environmental science & engineering\nWays to connect, whether for collaboration or just to chat about sustainability!\n\nFeel free to explore and reach out if you’d like to connect! 🚀"
   },
   {
     "objectID": "index.html#hi",
@@ -199,8 +199,8 @@
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Olivia Holt",
-    "section": "",
-    "text": "Bachelor of Science Environmental Engineering (2020), Colorado School of Mines\nMaster of Science Hydrologic Science & Engineering (2021), Colorado School of Mines\nMaster of Environmental Data Science (2024), University of California, Santa Barbara"
+    "section": "Education",
+    "text": "Education\nBachelor of Science Environmental Engineering (2020), Colorado School of Mines\nMaster of Science Hydrologic Science & Engineering (2021), Colorado School of Mines\nMaster of Environmental Data Science (2024), University of California, Santa Barbara"
   },
   {
     "objectID": "about.html#background",
@@ -229,5 +229,12 @@
     "title": "About Me",
     "section": "🌟 Beyond Work",
     "text": "🌟 Beyond Work\nWhen I’m not immersed in data, I’m usually exploring the outdoors, reading a good book, or spending time with my dog, Homer (named after the poet). I also enjoy connecting with others who share a passion for sustainability and environmental science.\nHere are some snapshots from my favorite adventures:"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Olivia Holt",
+    "section": "",
+    "text": "I’m [Your Name], an Environmental Data Scientist with a background in hydrology, environmental engineering, and data science. I’m passionate about using data-driven solutions to tackle complex environmental challenges, from water resource management to climate modeling.\nOn this site, you’ll find:\n\nMy projects, showcasing data science applications in environmental research\nMy background, including my journey in environmental science & engineering\nWays to connect, whether for collaboration or just to chat about sustainability!\n\nFeel free to explore and reach out if you’d like to connect! 🚀"
   }
 ]
