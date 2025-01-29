@@ -55,7 +55,7 @@ When I’m not immersed in data, I’m usually **exploring the outdoors**, readi
 
 Here are some snapshots from my favorite adventures:
 
-::: {layout-nrow=2}
+::: {layout-nrow=4}
 ![Kungsleden trail nordic skiing trip](IMG_9247.jpeg)
 ![Exploring nature](IMG_0889.jpeg)
 
@@ -63,7 +63,7 @@ Here are some snapshots from my favorite adventures:
 ![Climbing trip in Red Rocks](IMG_2276.jpeg)
 
 ![Homer enjoying the beach](IMG_4906.jpeg)
-![A serene moment outdoors](75430009.jpg)
+![](75430009.jpg)
 ![Homer enjoying a Tahoe bouldering session](IMG_6171.jpeg)
 
 :::
