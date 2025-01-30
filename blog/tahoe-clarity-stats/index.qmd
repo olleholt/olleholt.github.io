@@ -1,5 +1,5 @@
 ---
-title: "Olivia Holt"
+title: "Simple linear regression model"
 description: "A simple linear regression model of secchi disk depth against chlorophyll-a concentrations in Lake Tahoe"
 author: 
   - name: Olivia Holt
