@@ -1,6 +1,6 @@
 ---
 title: "Olivia Holt"
-description: "eds222"
+description: "A simple linear regression model of secchi disk depth against chlorophyll-a concentrations in Lake Tahoe"
 author: 
   - name: Olivia Holt
     url: https://olleholt.github.io/
