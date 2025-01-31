@@ -13,6 +13,7 @@ website:
         text: Blog
       - href: resources.qmd
         text: Resources
+        title: false
 
 format:
   html:
