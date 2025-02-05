@@ -10,7 +10,7 @@ website:
         text: Home
       - about.qmd
       - href: blogs.qmd
-        text: Blog
+        text: Projects
       - href: resources.qmd
         text: Resources
         title: false
