@@ -1,0 +1,354 @@
+---
+# ~ additional YAML options omitted for brevity ~
+title: "Data Viz Homework 4"
+author: "Olivia Holt"
+data: 03-12-2024
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+    code-summary: "Show the code"
+---
+
+# Data
+
+From Kaggle:
+
+<https://www.kaggle.com/datasets/mikeshout/14erpeaks/data>
+
+### **Context**
+
+This tidy dataset lists mountain peaks rising to an elevation greater than 14,000 ft (4,267 meters) located in the state of Colorado, USA.
+
+A fourteener is a mountain peak with an elevation greater than 14,000 feet and a significant prominence. The prominence has to be at least 300 feet higher than the saddle connecting it to a neighboring peak.
+
+In Colorado, and in this dataset, there are 58 peaks over 14,000 feet. Although five of those peaks do not meet the prominence rule but are included in this dataset.
+
+**Parameters of interest:**
+
+-   **Traffic High** – The high range of estimated visits in the year 2017
+
+-   **Lat** -The latitudinal coordinate in decimal form
+
+-   **Long** - The longitudinal coordinate in decimal form
+
+-   **Mountain Peak** – The name of the peak
+
+-   **Elevation Gain_ft** – The elevation gain of the standard route in feet
+
+-   **Difficulty** – The Yosemite Decimal System difficulty rating, a value ranging from Class 1 (easiest), Class 2, Easy Class 3, Class 3, Hard Class3, to Class 4 (most difficult)
+
+-   **Prominence_ft** – How much higher the peak is in feet from the next highest point
+
+```{r}
+#| warning: false
+#| error: false
+
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+#| fig-alt: "Alt text here"
+knitr::include_graphics(here::here("Colorado14nerPopularity.png"))
+
+```
+
+# Load Libraries
+
+```{r warning=FALSE}
+#| warning: false
+#| error: false
+
+# load in libraries ----
+library(tidyverse)
+library(janitor)
+library(dplyr)
+library(ggplot2)
+library(maps)
+library(plotly)
+library(kableExtra)
+library(paletteer)
+library(maps)
+library(mapdata)
+library(ggmap)
+library(osmdata)
+library(grid)
+library(viridis)
+library(ggtern)
+```
+
+# Load in Data
+
+```{r warning=FALSE}
+#| warning: false
+#| error: false
+
+data_wd <- "/Users/oliviaholt/Documents/eds240/Holt-eds240-HW4/data"
+# import data ----
+fourteener_data <- read_csv(file.path(data_wd, "14er.csv"), show_col_types = FALSE)
+```
+
+# Clean Data
+
+```{r warning=FALSE}
+#| warning: false
+#| error: false
+
+# clean data names----
+fourteener_clean <- fourteener_data %>% 
+  clean_names()
+
+# I want the difficulty class to be a value from 1 to 6 which I will change here
+fourteener_clean <- fourteener_clean %>%
+  mutate(
+    new_difficulty = case_when(
+      difficulty == "Class 1" ~ 1,
+      difficulty == "Class 2" ~ 2,
+      difficulty == "Hard Class 2" ~ 3,
+      difficulty == "Easy Class 3" ~ 4,
+      difficulty == "Class 3" | difficulty == "Hard Class 3" ~ 5,
+      difficulty == "Class 4" ~ 6,
+      TRUE ~ 20
+    )
+  )
+
+# I also want to arrange by descending order for taffic_high for viewing purposes
+fourteener_clean <- fourteener_clean %>% arrange(traffic_high)
+
+#grabbign the 20 most visited peaks into a subset
+fourteener_20 <- fourteener_clean %>% 
+  tail(20)
+```
+
+# Bar Plot
+
+```{r warning=FALSE}
+#| warning: false
+#| error: false
+
+#use subset of top 20 most visited peaks
+col_plot <- fourteener_clean %>%
+  tail(20) %>% 
+  ggplot() +
+  geom_col(aes(y = reorder(mountain_peak, traffic_high), #change into ascending order for mountain peak by traffic
+               x = traffic_high, fill = difficulty))+
+  xlab("Popularity by Traffic Estimate") +
+  ylab("")+ #empty ylabel
+  ggtitle(" ")+ #empty title
+  #get rid of grey background and fill with white
+  theme(panel.background = element_rect(fill = "white"),
+        #creating horizontal axis grid lines
+        panel.grid.major.x = element_line(color = "#A8BAC4", size = 0.3),
+        # Only left line of the vertical axis is painted in black
+        axis.line.y.left = element_line(color = "black"),
+        # increase font size for x and y-axis labels
+        axis.text.x = element_text(size = 12, family = "Arial"),
+        axis.text.y = element_text(size = 12, family = "Arial"),
+        axis.title.x = element_text(size = 14,family = "Arial"))+
+  scale_fill_paletteer_d("nationalparkcolors::CraterLake")+
+  labs(fill = "Difficulty Level")  # Change the legend title here
+
+col_plot
+
+#ggsave("col_plot.png", plot = col_plot, device = "png", width = 8, height = 6)
+```
+
+# Ternary Plot
+
+```{r warning=FALSE}
+#| warning: false
+#| error: false
+
+#showing all 58 14ner's color coded by difficulty
+
+# Create a ternary plot with specified axis limits
+tern_plot_0 <- ggtern(data = fourteener_clean, 
+                       aes(x = traffic_high,
+                           y = elevation_gain_ft,
+                           z = prominence_ft,
+                           fill = difficulty)) +#fill color by difficulty
+  
+  # Adding points to the plot with adjustements to transparancy, shape, color, size
+  geom_point(alpha = 0.5, shape = 21, color = "black", size = 4) +
+  
+  # Apply a theme to the plot
+  theme_bvbw(base_size = 12) +
+  
+  # Adjust the legend position
+  theme(legend.position = "bottom",axis.title = element_text(size = 9)) +
+  
+  # Labeling the axes
+  ylab("Elevation Gain (ft)") +
+  xlab("Traffic") +
+  zlab("Prominence") +
+  
+  # Setting the title of the plot as empty
+  labs(title = " ")+
+  
+   # Customizing the legend title and appearance
+   guides(fill = guide_legend(title = "Difficulty Level")) + #legend title
+   theme(legend.key = element_rect(fill = "white", color = "white"), #background color
+         legend.title = element_text(size = 10))+  # customizing legend box color
+   #Customize the legend title and appearance
+  
+  # Use scale_fill_manual to set custom colors for each difficulty level
+  #based off of the CraterLake color palette colors
+  scale_fill_manual(values = c("Class 1" = "#7DCCD3FF", "Class 2" = "#4E7147FF", 
+                               "Easy Class 3" = "#BE9C9DFF", "Class 3" = "#F7ECD8FF",
+                               "Hard Class 3" = "#376597FF", "Class 4" = "#9888A5FF"))
+
+```
+
+```{r}
+
+# a subset plot to only look at the 20 most popular 14ner in 2017
+# Creating a ternary plot
+tern_plot <- ggtern(data = fourteener_20, 
+                       aes(x = traffic_high,
+                           y = elevation_gain_ft,
+                           z = prominence_ft,
+                           fill = difficulty)) +
+  
+  # Add points to the plot with specified attributes
+  geom_point(alpha = 0.8, shape = 21, color = "black", size = 4) +
+  
+  # Apply a theme to the plot
+  theme_bvbw(base_size = 12) +
+  
+  # Adjust the legend position
+  theme(legend.position = "bottom",axis.title = element_text(size = 9)) +
+  
+  # Label the axes
+  ylab("Elevation Gain (ft)") +
+  xlab("Traffic") +
+  zlab("Prominence") +
+  
+  # Set the title of the plot as empty
+  labs(title = " ")+
+  
+   # Customize the legend title and appearance
+   guides(fill = guide_legend(title = "Difficulty Level")) +
+   theme(legend.key = element_rect(fill = "white", color = "white"),
+         legend.title = element_text(size = 10))+  # customizing legend box color
+   #Customize the legend title and appearance
+  
+  # Using scale_fill_manual to set custom colors for each difficulty level
+  scale_fill_manual(values = c("Class 1" = "#7DCCD3FF", "Class 2" = "#4E7147FF", 
+                               "Easy Class 3" = "#BE9C9DFF", "Class 3" = "#F7ECD8FF",
+                               "Hard Class 3" = "#376597FF", "Class 4" = "#9888A5FF"))
+```
+
+```{r}
+#| warning: false
+#| error: false
+
+# Add points to show where the other 38 fourteeners are
+#focus on most popular 20
+tern_plot_2 <- tern_plot +
+  geom_point(data = fourteener_clean, alpha = 0.5, shape = 1, color = "black", size = 4, family = "Arial") # changing transparancy, shape, color, size and font
+
+tern_plot_2 #printing plot
+
+ggsave("tern_plot_2.png", plot = tern_plot_2, device = "png", width = 8, height = 6)
+```
+
+# **Map**
+
+Note: I used the OSM package to plot major highways but could not render with it. Therefore I left it commented out because I still used it in the infographic.
+
+```{r warning=FALSE}
+#| warning: false
+#| error: false
+
+# load United States state map data from map_data package
+MainStates <- map_data("state")
+st_CO <- MainStates %>% 
+  filter(region == "colorado")
+
+# #using the OSM package to view the main roads in colorado
+# big_streets <- getbb("Colorado United States")%>%
+#   opq()%>%
+#   add_osm_feature(key = "highway", 
+#                   value = c("motorway", "primary", "motorway_link", "primary_link")) %>%
+#   osmdata_sf()
+```
+
+```{r}
+#| warning: false
+#| error: false
+
+# Filter the mt. bierstadt in the dataset (most visited)
+mt_bierstadt <- tail(fourteener_20, 1)
+
+map_plot_2 <- ggplot() + 
+  geom_polygon(data = st_CO, aes(x = long, y = lat, group = group),
+               color = "black", fill = "white") +
+  #geom_sf(data = big_streets$osm_lines, color = "black", alpha = 0.25) +
+  geom_point(data = fourteener_20,
+             aes(x = long, y = lat, fill = difficulty),
+             alpha = 0.8, shape = 24, color = "black", size = 5) +
+  geom_label(data = mt_bierstadt,
+             aes(x = long + 0.1, y = lat + 0.1, label = mountain_peak),#labeling the Mt. Bierstadt
+             vjust = 1.5, size = 3, color = "black",
+             label.padding = unit(0.15, "lines"),  # Adjust label padding
+             label.r = unit(0.15, "lines"),         # Adjust label radius
+             label.size = 0.25,#adjusting label size
+             nudge_x = 2.5,  # Nudging the labels to the right
+             nudge_y = -1) +  # Nudging the labels up
+  geom_segment(data = mt_bierstadt,
+               aes(x = long, y = lat, xend = long + 2.5, yend = lat + -1),# adjusting the location of the text box label for Mt. Biestadt
+               color = "black", size = 0.5, alpha = 1, lineend = "round") +  # Adding connecting line to mt bierstadt
+  scale_fill_paletteer_d("nationalparkcolors::CraterLake", name = "Difficulty Level") +
+  labs(title = "") +  # Empty title
+  theme(axis.title.x = element_blank(),  # Remove x-axis title
+        axis.title.y = element_blank(),  # Remove y-axis title
+        axis.text.x = element_blank(),   # Remove x-axis labels
+        axis.text.y = element_blank(),   # Remove y-axis labels
+        axis.ticks.x = element_blank(),   # Remove x-axis ticks
+        axis.ticks.y = element_blank())+   # Remove y-axis ticks
+  theme_void()# changing theme to void
+
+```
+
+```{r}
+#| warning: false
+#| error: false
+
+# Coordinates for Denver
+denver_lat <- 39.742043
+denver_long <- -104.991531
+
+# Add Denver point to the plot with a specific color
+map_plot_den <- map_plot_2 +
+  geom_point(data = data.frame(lon = denver_long, lat = denver_lat), 
+             aes(x = lon, y = lat, color = "Denver"), size = 2) +
+  scale_color_manual(values = "red", name = "City") #Using a red dot to pinpoint Denver
+
+# Print the plot
+map_plot_den
+
+#ggsave("map_plot_den.png", plot = map_plot_den, device = "png", width = 8, height = 6)
+
+```
+
+# Write Up
+
+My question is 'What makes a fourteener (14ner) the most popular’? With this dataset in particular I am looking at elevation gain of the hike in feet, high traffic estimates for 2017, difficulty level of the hike, and the individual peaks. The dataset has average values for the entire year of 2017. The difficulty levels range from Class 1, Class 2, Easy Class 3, Class 3, Hard Class 3, and Class 4.
+
+This tidy dataset is from Kaggle and it lists mountain peaks rising to an elevation greater than 14,000 ft (otherwise known as a fourteener) located in Colorado. Other than being 14,000 ft tall to be a 14ner, the prominence of the peak has to be at least 300 feet higher than the saddle that is connecting it to a neighboring peak. There are 58 peaks over 14,000 feet in Colorado and five of those peaks do not meet the prominence rule, but are included in this dataset. The dataset did not need much cleaning and wrangling except for some subsetting, arranging, and renaming.
+
+Initially, I anticipated that elevation/elevation gain and difficulty level would have the highest impact on traffic estimates and therefore wanted to focus on those. In hindsight I wish I had found a data set that had the distances from each to Denver as I think that would have a high impact on the popularity. From living in Colorado I remember Mt. Bierstadt being a popular peak because of its accessibility from Denver and it being the 'shortest' 14ner. This also made it the most accessible for people visiting from out of state as it is closer to the airport in Denver and for people not used to the elevation. It also would have been interesting to look at trends for each season as not many people climb in the winter or fall.
+
+Mt. Bierstadt did prove to be the most popular 14ner to climb in 2017 according to the high traffic estimate. When looking at the 20 most popular 14ner’s in 2017 they were all below the ‘Hard Class 3’ difficulty range according to the bar plot. Most of them were close together and closer to Denver, except for Handles peak in the southwest region of Colorado according to the map plot. And compared to the other 14ner’s, they had less elevation gain on the hike according to the ternary plot.
+
+A column plot, map, and ternary plot were used to visualize this dataset. These plots were selected because it is important to see where the peaks are located in relation to each other and in relation to major cities (Denver). The bar plot is an easy to read visual representation to view high traffic for each 14ner. I chose to do a ternary plot as well because I wanted to try an advanced plot.
+
+The titles and axis labels were changed for all of the plots along with an annotation and the axis tick changes on the map. The themes and palettes were changed to match so I only had to have one legend on the infographic and it would be easier to interpret all the plots together. The color palette I chose was a national park themed for crater lake. I tried to keep the plots as simple as possible so there wasn’t too much repeating information on the infographic. My primary message was to look at difficulty and elevation gain for the most popular hikes and I found that the hikes that were of lower elevation and lower difficulty were more popular. This makes sense to me because they are more accessible for a larger group of people. The plots I made were for a general audience and I think they would be understood by most people. I added the theme_bvbw() so that the ternary plot would be easier to read with added arrows to signify the direction of each variable's proportions.
+
+## References:
+
+#### Photos:
+
+<https://www.14ers.com/route.php?route=bier1>
+
+<https://topographiadesign.com/products/pikes-peak-colorado-topographic-print?variant=32432336175244>
