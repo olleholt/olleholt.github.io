@@ -236,5 +236,19 @@
     "title": "Olivia Holt",
     "section": "",
     "text": "I’m Olivia Holt, an Environmental Data Scientist with a background in hydrology, environmental engineering, and data science. I’m passionate about using data-driven solutions to tackle complex environmental challenges, from water resource management to climate modeling.\nOn this site, you’ll find:\n\nMy projects, showcasing data science applications in environmental research\nMy background, including my journey in environmental science & engineering\nWays to connect, whether for collaboration or just to chat about sustainability!\n\nFeel free to explore and reach out if you’d like to connect!"
+  },
+  {
+    "objectID": "Projects/Data_Viz_14ners/index.html",
+    "href": "Projects/Data_Viz_14ners/index.html",
+    "title": "Data Vizualization",
+    "section": "",
+    "text": "From Kaggle:\nhttps://www.kaggle.com/datasets/mikeshout/14erpeaks/data\n\n\nThis tidy dataset lists mountain peaks rising to an elevation greater than 14,000 ft (4,267 meters) located in the state of Colorado, USA.\nA fourteener is a mountain peak with an elevation greater than 14,000 feet and a significant prominence. The prominence has to be at least 300 feet higher than the saddle connecting it to a neighboring peak.\nIn Colorado, and in this dataset, there are 58 peaks over 14,000 feet. Although five of those peaks do not meet the prominence rule but are included in this dataset.\nParameters of interest:\n\nTraffic High – The high range of estimated visits in the year 2017\nLat -The latitudinal coordinate in decimal form\nLong - The longitudinal coordinate in decimal form\nMountain Peak – The name of the peak\nElevation Gain_ft – The elevation gain of the standard route in feet\nDifficulty – The Yosemite Decimal System difficulty rating, a value ranging from Class 1 (easiest), Class 2, Easy Class 3, Class 3, Hard Class3, to Class 4 (most difficult)\nProminence_ft – How much higher the peak is in feet from the next highest point\n\n\n\nShow the code\n##| warning: false\n##| error: false\n\n##| eval: true\n##| echo: false\n##| fig-align: \"center\"\n##| out-width: \"100%\"\n##| fig-alt: \"Alt text here\"\n#knitr::include_graphics(here::here(\"Colorado14nerPopularity.png\"))"
+  },
+  {
+    "objectID": "Projects/Data_Viz_14ners/index.html#references",
+    "href": "Projects/Data_Viz_14ners/index.html#references",
+    "title": "Data Vizualization",
+    "section": "References:",
+    "text": "References:\n\nPhotos:\nhttps://www.14ers.com/route.php?route=bier1\nhttps://topographiadesign.com/products/pikes-peak-colorado-topographic-print?variant=32432336175244"
   }
 ]

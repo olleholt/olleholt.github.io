@@ -41,15 +41,15 @@ In Colorado, and in this dataset, there are 58 peaks over 14,000 feet. Although 
 -   **Prominence_ft** – How much higher the peak is in feet from the next highest point
 
 ```{r}
-#| warning: false
-#| error: false
+##| warning: false
+##| error: false
 
-#| eval: true
-#| echo: false
-#| fig-align: "center"
-#| out-width: "100%"
-#| fig-alt: "Alt text here"
-knitr::include_graphics(here::here("Colorado14nerPopularity.png"))
+##| eval: true
+##| echo: false
+##| fig-align: "center"
+##| out-width: "100%"
+##| fig-alt: "Alt text here"
+#knitr::include_graphics(here::here("Colorado14nerPopularity.png"))
 
 ```
 
