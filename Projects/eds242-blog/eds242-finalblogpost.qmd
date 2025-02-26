@@ -1,6 +1,6 @@
 ---
 title: "Discussion of AI and Machine Learning in Climate Analysis"
-description: "EDS242 Final Blog"
+description: "EDS242 Final Discussion"
 author: 
   - name: Olivia Holt
     url: https://olleholt.github.io/

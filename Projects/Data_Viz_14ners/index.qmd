@@ -83,7 +83,7 @@ library(ggtern)
 #| warning: false
 #| error: false
 
-data_wd <- "/Users/oliviaholt/Documents/eds240/Holt-eds240-HW4/data"
+data_wd <- "/Users/oliviaholt/Documents/olleholt.github.io/Projects/Data_Viz_14ners/Untitled"
 # import data ----
 fourteener_data <- read_csv(file.path(data_wd, "14er.csv"), show_col_types = FALSE)
 ```
