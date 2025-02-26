@@ -1,6 +1,6 @@
 ---
 # ~ additional YAML options omitted for brevity ~
-title: "Data Viz Homework 4"
+title: "Data Vizualization"
 author: "Olivia Holt"
 data: 03-12-2024
 format:
