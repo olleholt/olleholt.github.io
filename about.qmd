@@ -27,10 +27,14 @@ My academic and professional journey has always focused on combining my love for
 -   Hands-on problem-solving through fieldwork.
 -   Designing impactful, sustainable systems.
 
+At Mines, I was able to take a summer field course for my environmental engineering degree. We traveled to sites in Colorado to test various water sources for our client. Our goal was to determine how effective the remediation efforts were for a local mining company. This experience solidified my interest in **fieldwork** and **data collection** and **lab analysis**.
+
+![Summer field course in Colorado](IMG_0888.jpeg){.center width="60%"}
+
 One of the most transformative experiences was my **Senior Design capstone project** at **Colorado School of Mines**, where my team designed a water delivery system for two villages in **Nepal**. Traveling to Nepal to finalize the solution gave me firsthand insight into the local culture, geography, and needs.
 
 ::: {layout="[[50,50]]"}
-![Hiking in Nepal](IMG_0899.jpeg) ![Village dog in Khunde, Nepal](Nepal2019_dog_KhundeKhumjungP1000258-2.jpg)
+![Hiking in Nepal](IMG_0899.jpeg) ![Village dog in Khunde, Nepal](Nepal2019_dog_KhundeKhumjungP1000258-2.jpg) ![Flight to Lukla, Nepal](nepal_flight_lukla.jpeg)
 :::
 
 These experiences laid the foundation for my current focus on **data science and environmental modeling**, blending fieldwork with cutting-edge technology to solve environmental challenges.
@@ -41,8 +45,9 @@ These experiences laid the foundation for my current focus on **data science and
 
 I specialize in combining **data science** with **hydrology and environmental engineering** to address real-world environmental issues. My skill set includes:
 
--   **Data Science**: Applying machine learning, statistical modeling, and spatial analysis to environmental datasets.
+-   **Data Science**: Applying statistical modeling and spatial analysis to environmental datasets.
 -   **Hydrology and Environmental Engineering**: Managing water resources and creating sustainable solutions.
+-   **Fieldwork**: Conducting hands-on research and data collection in diverse environments.
 
 I’m passionate about creating workflows and tools that make environmental data more accessible, actionable, and impactful.
 
