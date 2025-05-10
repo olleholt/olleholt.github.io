@@ -5,49 +5,48 @@ format:
     toc: false
     theme: lumen
     css: styles.css  # Add custom styles if needed
+---
 
----
----
+------------------------------------------------------------------------
 
 ## 🌿 **Background**
 
-I grew up with a love for the outdoors, spending summers in the **Poconos** catching salamanders, frogs, and snakes with my siblings. These early adventures fueled my fascination with nature and shaped my career path. A summer camp in **Dubois, WY** further deepened this love, teaching me how to **backpack, fly fish, horseback ride, and rock climb**. 
+I grew up with a love for the outdoors, spending summers in the **Poconos** catching salamanders, frogs, and snakes with my siblings. These early adventures fueled my fascination with nature and shaped my career path. A summer camp in **Dubois, WY** further deepened this love, teaching me how to **backpack, fly fish, horseback ride, and rock climb**.
 
-These experiences inspired me to pursue a STEM degree where I could combine my curiosity for the environment with my desire to make a meaningful impact. 
+These experiences inspired me to pursue a STEM degree where I could combine my curiosity for the environment with my desire to make a meaningful impact.
 
-![Summer in Wyoming with my siblings](RenderedImage.jpeg){width=60% .center}
+![Summer in Wyoming with my siblings](RenderedImage.jpeg){.center width="60%"}
 
----
+------------------------------------------------------------------------
 
 ## 🎓 **Educational Journey**
 
 My academic and professional journey has always focused on combining my love for **math** and **science** with my passion for understanding how people interact with their environments. Through my studies, I've had the opportunity to explore:
 
-- Environmental processes and data analysis.
-- Hands-on problem-solving through fieldwork.
-- Designing impactful, sustainable systems.
+-   Environmental processes and data analysis.
+-   Hands-on problem-solving through fieldwork.
+-   Designing impactful, sustainable systems.
 
 One of the most transformative experiences was my **Senior Design capstone project** at **Colorado School of Mines**, where my team designed a water delivery system for two villages in **Nepal**. Traveling to Nepal to finalize the solution gave me firsthand insight into the local culture, geography, and needs.
 
 ::: {layout="[[50,50]]"}
-![Hiking in Nepal](IMG_0899.jpeg)
-![Village dog in Khunde, Nepal](Nepal2019_dog_KhundeKhumjungP1000258-2.jpg)
+![Hiking in Nepal](IMG_0899.jpeg) ![Village dog in Khunde, Nepal](Nepal2019_dog_KhundeKhumjungP1000258-2.jpg)
 :::
 
 These experiences laid the foundation for my current focus on **data science and environmental modeling**, blending fieldwork with cutting-edge technology to solve environmental challenges.
 
----
+------------------------------------------------------------------------
 
 ## 🔬 **My Focus**
 
 I specialize in combining **data science** with **hydrology and environmental engineering** to address real-world environmental issues. My skill set includes:
 
-- **Data Science**: Applying machine learning, statistical modeling, and spatial analysis to environmental datasets.
-- **Hydrology and Environmental Engineering**: Managing water resources and creating sustainable solutions.
+-   **Data Science**: Applying machine learning, statistical modeling, and spatial analysis to environmental datasets.
+-   **Hydrology and Environmental Engineering**: Managing water resources and creating sustainable solutions.
 
 I’m passionate about creating workflows and tools that make environmental data more accessible, actionable, and impactful.
 
----
+------------------------------------------------------------------------
 
 ## 🌟 **Beyond Work**
 
@@ -55,20 +54,12 @@ When I’m not immersed in data, I’m usually **exploring the outdoors**, readi
 
 Here are some snapshots from my favorite adventures:
 
-::: {layout-nrow=1}
-![Kungsleden trail nordic skiing trip](IMG_9247.jpeg)
-![Exploring nature](IMG_0889.jpeg)
+::: {layout-nrow="1"}
+![Kungsleden trail nordic skiing trip](IMG_9247.jpeg) ![Exploring nature](IMG_0889.jpeg)
 
-![Sailing trip in the Ionian Sea](IMG_4780.jpeg)
-![Climbing trip in Red Rocks](IMG_2276.jpeg)
+![Sailing trip in the Ionian Sea](IMG_4780.jpeg) ![Climbing trip in Red Rocks](IMG_2276.jpeg)
 
-![Homer enjoying the beach](IMG_4906.jpeg)
-![](75430009.jpg)
-![Homer enjoying a Tahoe bouldering session](IMG_6171.jpeg)
-
+![Homer enjoying the beach](IMG_4906.jpeg) ![](75430009.jpg) ![Homer enjoying a Tahoe bouldering session](IMG_6171.jpeg)
 :::
 
----
-
-
-
+------------------------------------------------------------------------

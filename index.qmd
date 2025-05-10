@@ -14,7 +14,7 @@ about:
       icon: github
 ---
 
-## **Welcome!** 👋
+## **Welcome!**
 
 I’m Olivia Holt, an **Environmental Data Scientist** with a background in **hydrology, environmental engineering, and data science**. I’m passionate about using data-driven solutions to tackle complex environmental challenges, from water resource management to climate modeling.
 
