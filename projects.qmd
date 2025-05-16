@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 listing: 
-  contents: blog
+  contents: project
   type: grid
   sort: "date desc"
   categories: true
