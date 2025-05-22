@@ -26,19 +26,19 @@ In Colorado, and in this dataset, there are 58 peaks over 14,000 feet. Although 
 
 **Parameters of interest:**
 
--   **Traffic High** – The high range of estimated visits in the year 2017
+-   **Traffic High** -- The high range of estimated visits in the year 2017
 
 -   **Lat** -The latitudinal coordinate in decimal form
 
 -   **Long** - The longitudinal coordinate in decimal form
 
--   **Mountain Peak** – The name of the peak
+-   **Mountain Peak** -- The name of the peak
 
--   **Elevation Gain_ft** – The elevation gain of the standard route in feet
+-   **Elevation Gain_ft** -- The elevation gain of the standard route in feet
 
--   **Difficulty** – The Yosemite Decimal System difficulty rating, a value ranging from Class 1 (easiest), Class 2, Easy Class 3, Class 3, Hard Class3, to Class 4 (most difficult)
+-   **Difficulty** -- The Yosemite Decimal System difficulty rating, a value ranging from Class 1 (easiest), Class 2, Easy Class 3, Class 3, Hard Class3, to Class 4 (most difficult)
 
--   **Prominence_ft** – How much higher the peak is in feet from the next highest point
+-   **Prominence_ft** -- How much higher the peak is in feet from the next highest point
 
 ```{r}
 ##| warning: false
@@ -333,17 +333,17 @@ map_plot_den
 
 # Write Up
 
-My question is 'What makes a fourteener (14ner) the most popular’? With this dataset in particular I am looking at elevation gain of the hike in feet, high traffic estimates for 2017, difficulty level of the hike, and the individual peaks. The dataset has average values for the entire year of 2017. The difficulty levels range from Class 1, Class 2, Easy Class 3, Class 3, Hard Class 3, and Class 4.
+My question is 'What makes a fourteener (14ner) the most popular'? With this dataset in particular I am looking at elevation gain of the hike in feet, high traffic estimates for 2017, difficulty level of the hike, and the individual peaks. The dataset has average values for the entire year of 2017. The difficulty levels range from Class 1, Class 2, Easy Class 3, Class 3, Hard Class 3, and Class 4.
 
 This tidy dataset is from Kaggle and it lists mountain peaks rising to an elevation greater than 14,000 ft (otherwise known as a fourteener) located in Colorado. Other than being 14,000 ft tall to be a 14ner, the prominence of the peak has to be at least 300 feet higher than the saddle that is connecting it to a neighboring peak. There are 58 peaks over 14,000 feet in Colorado and five of those peaks do not meet the prominence rule, but are included in this dataset. The dataset did not need much cleaning and wrangling except for some subsetting, arranging, and renaming.
 
 Initially, I anticipated that elevation/elevation gain and difficulty level would have the highest impact on traffic estimates and therefore wanted to focus on those. In hindsight I wish I had found a data set that had the distances from each to Denver as I think that would have a high impact on the popularity. From living in Colorado I remember Mt. Bierstadt being a popular peak because of its accessibility from Denver and it being the 'shortest' 14ner. This also made it the most accessible for people visiting from out of state as it is closer to the airport in Denver and for people not used to the elevation. It also would have been interesting to look at trends for each season as not many people climb in the winter or fall.
 
-Mt. Bierstadt did prove to be the most popular 14ner to climb in 2017 according to the high traffic estimate. When looking at the 20 most popular 14ner’s in 2017 they were all below the ‘Hard Class 3’ difficulty range according to the bar plot. Most of them were close together and closer to Denver, except for Handles peak in the southwest region of Colorado according to the map plot. And compared to the other 14ner’s, they had less elevation gain on the hike according to the ternary plot.
+Mt. Bierstadt did prove to be the most popular 14ner to climb in 2017 according to the high traffic estimate. When looking at the 20 most popular 14ner's in 2017 they were all below the 'Hard Class 3' difficulty range according to the bar plot. Most of them were close together and closer to Denver, except for Handles peak in the southwest region of Colorado according to the map plot. And compared to the other 14ner's, they had less elevation gain on the hike according to the ternary plot.
 
 A column plot, map, and ternary plot were used to visualize this dataset. These plots were selected because it is important to see where the peaks are located in relation to each other and in relation to major cities (Denver). The bar plot is an easy to read visual representation to view high traffic for each 14ner. I chose to do a ternary plot as well because I wanted to try an advanced plot.
 
-The titles and axis labels were changed for all of the plots along with an annotation and the axis tick changes on the map. The themes and palettes were changed to match so I only had to have one legend on the infographic and it would be easier to interpret all the plots together. The color palette I chose was a national park themed for crater lake. I tried to keep the plots as simple as possible so there wasn’t too much repeating information on the infographic. My primary message was to look at difficulty and elevation gain for the most popular hikes and I found that the hikes that were of lower elevation and lower difficulty were more popular. This makes sense to me because they are more accessible for a larger group of people. The plots I made were for a general audience and I think they would be understood by most people. I added the theme_bvbw() so that the ternary plot would be easier to read with added arrows to signify the direction of each variable's proportions.
+The titles and axis labels were changed for all of the plots along with an annotation and the axis tick changes on the map. The themes and palettes were changed to match so I only had to have one legend on the infographic and it would be easier to interpret all the plots together. The color palette I chose was a national park themed for crater lake. I tried to keep the plots as simple as possible so there wasn't too much repeating information on the infographic. My primary message was to look at difficulty and elevation gain for the most popular hikes and I found that the hikes that were of lower elevation and lower difficulty were more popular. This makes sense to me because they are more accessible for a larger group of people. The plots I made were for a general audience and I think they would be understood by most people. I added the theme_bvbw() so that the ternary plot would be easier to read with added arrows to signify the direction of each variable's proportions.
 
 ## References:
 
